@@ -28,7 +28,13 @@ With the resulting folder under `bin`, you can put it in the Godot project under
 
 ## Updating the template
 
-Change the `iOSPluginTemplate` string with your plugin name in all files. Also rename the folders.
+Change the `iOSPluginTemplate` string with your plugin name in all files. Also rename the folders. You can do that by running:
+
+```sh
+$ ./scripts/change_template.sh PluginName plugin_name
+```
+
+Where the first argument is the plugin name (`PascalCase`) and the second is a `snake_case` version for functions.
 
 Adjust the development team in the build settings of the project on Xcode.
 
